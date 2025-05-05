@@ -1,0 +1,137 @@
+xml
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Serrano - Queijo Serra da Estrela</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f9f7f2;
+            color: #2d2d2d;
+        }
+        header {
+            background: #e6c96a;
+            padding: 24px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #2d2d2d;
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 32px auto;
+            padding: 0 16px;
+        }
+        .produto-img {
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            display: block;
+            margin: 0 auto 24px auto;
+        }
+        .produtos-lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .produto-card {
+            background: #fffbe8;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 24px;
+            text-align: center;
+            width: 260px;
+        }
+        footer {
+            background: #e6c96a;
+            text-align: center;
+            padding: 16px 0;
+            margin-top: 48px;
+            font-size: 0.95em;
+        }
+        @media (max-width: 600px) {
+            .produtos-lista {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .produto-card {
+                width: 100%;
+            }
+            .container {
+                padding: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O Serrano</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container" id="inicio">
+        <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/67930649/uIGLpikNbvtscaS/frasco-normal.jpg" alt="Molho de Queijo Serra da Estrela O Serrano" class="produto-img">
+        <h2>Molho de Queijo Serra da Estrela</h2>
+        <p>Descubra o sabor autêntico da Serra da Estrela no nosso molho de queijo premium, feito com alma e tradição. Ideal para momentos especiais e para quem valoriza qualidade.</p>
+    </div>
+
+    <div class="container" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+            O Serrano nasceu do sonho de um jovem apaixonado pela tradição e pelos sabores únicos da Serra da Estrela. Enquanto terminava o curso de Engenharia Alimentar, decidiu transformar a herança familiar em inovação, criando um molho de queijo que respeita a autenticidade do queijo da região, mas com um toque moderno e versátil.<br><br>
+            Cada frasco é preparado com dedicação, ingredientes selecionados e respeito pelo saber fazer artesanal. O objetivo? Levar o verdadeiro sabor da Serra da Estrela à mesa de todos os portugueses, com qualidade, honestidade e paixão.
+        </p>
+    </div>
+
+    <div class="container" id="produtos">
+        <h2>Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto-card">
+                <img src="https://pplx-res.cloudinary.com/image/private/user_uploads/67930649/uIGLpikNbvtscaS/frasco-normal.jpg" alt="Molho de Queijo Serra da Estrela" style="width:100%;border-radius:8px;">
+                <h3>Molho de Queijo Serra da Estrela</h3>
+                <p>250g</p>
+                <p>O verdadeiro sabor do queijo mais famoso de Portugal, agora em versão cremosa e pronta a servir.</p>
+                <p><strong>Disponível em breve</strong></p>
+            </div>
+            <!-- Podes adicionar mais produtos aqui -->
+        </div>
+    </div>
+
+    <div class="container" id="contacto">
+        <h2>Contacto</h2>
+        <p>Tem dúvidas, sugestões ou quer fazer uma encomenda?</p>
+        <form action="mailto:teuemail@exemplo.com" method="post" enctype="text/plain">
+            <label>Nome:<br>
+                <input type="text" name="nome" required style="width:100%;padding:8px;margin-bottom:12px;">
+            </label><br>
+            <label>Email:<br>
+                <input type="email" name="email" required style="width:100%;padding:8px;margin-bottom:12px;">
+            </label><br>
+            <label>Mensagem:<br>
+                <textarea name="mensagem" rows="4" required style="width:100%;padding:8px;"></textarea>
+            </label><br>
+            <button type="submit" style="margin-top:12px;padding:10px 24px;background:#e6c96a;border:none;border-radius:5px;font-weight:bold;">Enviar</button>
+        </form>
+        <p style="margin-top:16px;">Ou contacta-nos pelo email: <strong>teuemail@exemplo.com</strong></p>
+    </div>
+
+    <footer>
+        &copy; 2025 O Serrano. Todos os direitos reservados.
+    </footer>
+</body>
+</html
